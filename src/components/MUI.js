@@ -7,27 +7,16 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 const MUI = () => {
 	return (
-		<ButtonGroup>
-			<Button
-				size='large'
-				variant='contained'
-				color='secondary'
-			>
-				Hello World
-			</Button>
+		<ButtonGroup variant='contained' color='primary'>
 			<Button
 				startIcon={<SaveIcon />}
 				size='large'
-				variant='contained'
-				color='secondary'
 			>
 				Save
 			</Button>
 			<Button
 				startIcon={<DeleteIcon />}
 				size='large'
-				variant='contained'
-				color='secondary'
 			>
 				Discard
 			</Button>
