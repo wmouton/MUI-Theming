@@ -4,7 +4,7 @@ import SaveIcon from '@material-ui/icons/Save';
 
 const MUI = () => {
 	return (
-		<Button startIcon={<SaveIcon />} size='large' variant='contained' color='secondary'>
+		<Button endIcon={<SaveIcon />} size='large' variant='contained' color='secondary'>
 			Hello World
 		</Button>
 	);
