@@ -30,8 +30,8 @@ const CheckboxExample = () => {
 const MUI = () => {
 	return (
 		<>
-			Time:
-			<TextField variant='outlined' color='secondary' type='time' />
+			Email:
+			<TextField variant='filled' color='secondary' type='email' label='Email' placeholder='test@test.com' />
 			Date:
 			<TextField variant='outlined' color='secondary' type='date' />
 			<CheckboxExample />
