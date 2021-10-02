@@ -12,7 +12,7 @@ const CheckboxExample = () => {
 			<Checkbox
 				checked={checked}
 				onChange={(e) => setChecked(e.target.checked)}
-                color='primary'
+				inputProps={{ "aria-label": "secondary checkbox" }}
 			/>
 		</div>
 	);
