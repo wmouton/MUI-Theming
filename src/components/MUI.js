@@ -6,9 +6,13 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import Checkbox from "@material-ui/core/Checkbox";
 
 const CheckboxExample = () => {
+	const [checked, setChecked] = React.useState(true);
 	return (
 		<div>
-			<Checkbox />
+			<Checkbox
+				checked={checked}
+				onChange={(e) => setChecked(e.target.checked)}
+			/>
 		</div>
 	);
 };
