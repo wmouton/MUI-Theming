@@ -18,6 +18,7 @@ const CheckboxExample = () => {
 						inputProps={{ "aria-label": "secondary checkbox" }}
 					/>
 				}
+                label='Testing Checkbox'
 			/>
 		</div>
 	);
