@@ -30,7 +30,10 @@ const CheckboxExample = () => {
 const MUI = () => {
 	return (
 		<>
-        <TextField />
+			Time:
+			<TextField variant='outlined' color='secondary' type='time' />
+			Date:
+			<TextField variant='outlined' color='secondary' type='date' />
 			<CheckboxExample />
 			<ButtonGroup variant='contained' color='primary'>
 				<Button startIcon={<SaveIcon />} size='large'>
