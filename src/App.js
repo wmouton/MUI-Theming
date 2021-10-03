@@ -10,7 +10,6 @@ import Checkbox from "@material-ui/core/Checkbox";
 
 import { FormControlLabel } from "@material-ui/core";
 import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core/styles";
-import { green, orange } from "@material-ui/core/colors";
 
 import "fontsource-roboto";
 
