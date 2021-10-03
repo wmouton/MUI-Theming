@@ -6,7 +6,8 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import Checkbox from "@material-ui/core/Checkbox";
 import { FormControlLabel } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
+import { orange } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
 	root: {
@@ -16,6 +17,14 @@ const useStyles = makeStyles({
 		borderRadius: 15,
 		color: "white",
 		padding: "5 30px",
+	},
+});
+
+const theme = createTheme({
+	palette: {
+		primary: {
+			main: orange[500],
+		},
 	},
 });
 
@@ -47,26 +56,28 @@ const CheckboxExample = () => {
 const MUI = () => {
 	return (
 		<>
-		<ButtonStyled />
-			Email:
-			<TextField
-				variant='filled'
-				color='secondary'
-				type='email'
-				label='Email'
-				placeholder='test@test.com'
-			/>
-			Date:
-			<TextField variant='outlined' color='secondary' type='date' />
-			<CheckboxExample />
-			<ButtonGroup variant='contained' color='primary'>
-				<Button startIcon={<SaveIcon />} size='large'>
-					Save
-				</Button>
-				<Button startIcon={<DeleteIcon />} size='large'>
-					Discard
-				</Button>
-			</ButtonGroup>
+			<ThemeProvider theme={theme}>
+				<ButtonStyled />
+				Email:
+				<TextField
+					variant='filled'
+					color='secondary'
+					type='email'
+					label='Email'
+					placeholder='test@test.com'
+				/>
+				Date:
+				<TextField variant='outlined' color='secondary' type='date' />
+				<CheckboxExample />
+				<ButtonGroup variant='contained' color='primary'>
+					<Button startIcon={<SaveIcon />} size='large'>
+						Save
+					</Button>
+					<Button startIcon={<DeleteIcon />} size='large'>
+						Discard
+					</Button>
+				</ButtonGroup>
+			</ThemeProvider>
 		</>
 	);
 };
