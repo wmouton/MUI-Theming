@@ -73,7 +73,7 @@ const CheckboxExample = () => {
 const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
-			<Container>
+			<Container maxWidth="md">
 				<div className='App'>
 					<header className='App-header'>
 						<Typography variant='h3' component='div'>
