@@ -19,6 +19,11 @@ import { Container } from "@material-ui/core";
 import { Paper } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 
+import { AppBar } from "@material-ui/core";
+import { Toolbar } from "@material-ui/core";
+import { IconButton } from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu"
+
 const useStyles = makeStyles({
 	root: {
 		background: "linear-gradient(45deg, #2a4d3f, #1b878f)",
@@ -77,6 +82,19 @@ const App = () => {
 			<Container maxWidth='md'>
 				<div className='App'>
 					<header className='App-header'>
+					<AppBar>
+						<Toolbar>
+							<IconButton>
+								<MenuIcon />
+							</IconButton>
+							<Typography variant='h6'>
+								MUI Theming
+							</Typography>
+							<Button>
+								Login
+							</Button>
+						</Toolbar>
+					</AppBar>
 						<Typography variant='h3' component='div'>
 							Welcome to MUI
 						</Typography>
