@@ -12,6 +12,8 @@ import { green, orange } from "@material-ui/core/colors";
 
 import "fontsource-roboto";
 
+import Typography from "@material-ui/core/Typography";
+
 const useStyles = makeStyles({
 	root: {
 		background: "linear-gradient(45deg, #2a4d3f, #1b878f)",
@@ -63,6 +65,7 @@ const MUI = () => {
 	return (
 		<>
 			<ThemeProvider theme={theme}>
+				<Typography>Welcome to MUI</Typography>
 				<ButtonStyled />
 				<TextField
 					variant='filled'
