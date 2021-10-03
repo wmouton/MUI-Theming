@@ -7,7 +7,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import { FormControlLabel } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
 import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
-import { orange } from "@material-ui/core/colors";
+import { green } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
 	root: {
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 const theme = createTheme({
 	palette: {
 		primary: {
-			main: orange[500],
+			main: green[500],
 		},
 	},
 });
