@@ -67,6 +67,7 @@ const MUI = () => {
 			<ThemeProvider theme={theme}>
 				<Typography variant='h3'>Welcome to MUI</Typography>
 				<Typography variant='subtitle1'>Learn how to use Material UI</Typography>
+				<Typography variant='body1'>Fast Development with MUI</Typography>
 				<ButtonStyled />
 				<TextField
 					variant='filled'
