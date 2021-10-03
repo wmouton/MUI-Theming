@@ -9,7 +9,6 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import Checkbox from "@material-ui/core/Checkbox";
 
 import { FormControlLabel } from "@material-ui/core";
-// import { TextField } from "@material-ui/core";
 import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
 import { green, orange } from "@material-ui/core/colors";
 
@@ -93,15 +92,6 @@ const App = () => {
 							<Paper />
 						</Grid>
 
-						{/* <TextField
-							variant='filled'
-							color='secondary'
-							type='email'
-							label='Email'
-							placeholder='test@test.com'
-						/> */}
-
-						{/* <TextField variant='outlined' color='secondary' type='date' /> */}
 						<CheckboxExample />
 
 						<ButtonGroup variant='contained' color='primary'>
