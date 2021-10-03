@@ -26,6 +26,12 @@ const useStyles = makeStyles({
 });
 
 const theme = createTheme({
+	typography: {
+		h3: {
+			fontSize: 36,
+			marginBottom: 15,
+		},
+	},
 	palette: {
 		primary: {
 			main: green[400],
@@ -65,9 +71,15 @@ const MUI = () => {
 	return (
 		<>
 			<ThemeProvider theme={theme}>
-				<Typography variant='h3'>Welcome to MUI</Typography>
-				<Typography variant='subtitle1'>Learn how to use Material UI</Typography>
-				<Typography variant='body1'>Fast Development with MUI</Typography>
+				<Typography variant='h3' component='div'>
+					Welcome to MUI
+				</Typography>
+				<Typography variant='subtitle1'>
+					Learn how to use Material UI
+				</Typography>
+				<Typography variant='body1'>
+					Fast Development with MUI
+				</Typography>
 				<ButtonStyled />
 				<TextField
 					variant='filled'
