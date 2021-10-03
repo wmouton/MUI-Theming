@@ -41,14 +41,6 @@ const theme = createTheme({
 			fontSize: 36,
 		},
 	},
-	palette: {
-		primary: {
-			main: green[400],
-		},
-		secondary: {
-			main: orange[400],
-		},
-	},
 });
 
 const ButtonStyled = () => {
