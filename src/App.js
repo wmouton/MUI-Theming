@@ -28,17 +28,19 @@ const useStyles = makeStyles({
 	root: {
 		background: "linear-gradient(45deg, #2a4d3f, #1b878f)",
 		border: 0,
+		marginTop: 10,
 		marginBottom: 15,
 		borderRadius: 15,
 		color: "white",
-		padding: "5px 30px",
+		padding: "20px 30px",
 	},
 });
 
 const theme = createTheme({
 	typography: {
-		h3: {
-			fontSize: 36,
+		h2: {
+			fontSize: 40,
+			marginTop: '40px'
 		},
 	},
 });
@@ -83,11 +85,20 @@ const App = () => {
 								MUI Theming
 							</Typography>
 							<Button>
+								Home
+							</Button>
+							<Button>
+								About
+							</Button>
+							<Button>
 								Login
+							</Button>
+							<Button>
+								Signup
 							</Button>
 						</Toolbar>
 					</AppBar>
-						<Typography variant='h3' component='div'>
+						<Typography variant='h2' component='div'>
 							Welcome to MUI
 						</Typography>
 						<Typography variant='subtitle1'>
