@@ -9,14 +9,14 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import Checkbox from "@material-ui/core/Checkbox";
 
 import { FormControlLabel } from "@material-ui/core";
-import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
+import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core/styles";
 import { green, orange } from "@material-ui/core/colors";
 
 import "fontsource-roboto";
 
 import { Typography } from "@material-ui/core";
 import { Container } from "@material-ui/core";
-import { Paper } from "@mui/material";
+import { Paper } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -88,8 +88,17 @@ const App = () => {
 						</Typography>
 
 						<ButtonStyled />
-						<Grid>
-							<Paper />
+
+						<Grid container spacing={2} justifyContent='center'>
+							<Grid item xs={12}>
+								<Paper elevation={1} variant="outlined" square style={{ heigth:75, width:'100%' }} />
+							</Grid>
+							<Grid item>
+								<Paper elevation={1}  variant="outlined" square style={{ heigth:75, width:50 }} />
+							</Grid>
+							<Grid item>
+								<Paper elevation={1}  variant="outlined" square style={{ heigth:75, width:50 }} />
+							</Grid>
 						</Grid>
 
 						<CheckboxExample />
