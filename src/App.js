@@ -90,13 +90,13 @@ const App = () => {
 						<ButtonStyled />
 
 						<Grid container spacing={2} justifyContent='center'>
-							<Grid item xs={12}>
-								<Paper elevation={1} variant="outlined" square style={{ heigth:75, width:'100%' }} />
+							<Grid item xs={12} sm={1}>
+								<Paper elevation={1} variant="outlined" square style={{ heigth:75, width:50 }} />
 							</Grid>
-							<Grid item>
+							<Grid item xs={12} sm={1}>
 								<Paper elevation={1}  variant="outlined" square style={{ heigth:75, width:50 }} />
 							</Grid>
-							<Grid item>
+							<Grid item xs={12} sm={1}>
 								<Paper elevation={1}  variant="outlined" square style={{ heigth:75, width:50 }} />
 							</Grid>
 						</Grid>
