@@ -13,10 +13,10 @@ const useStyles = makeStyles({
 	root: {
 		background: "linear-gradient(45deg, #2a4d3f, #1b878f)",
 		border: 0,
-		margin: 0,
+		margin: 9,
 		borderRadius: 15,
 		color: "white",
-		padding: "5 30px",
+		padding: "5px 30px",
 	},
 });
 
@@ -61,7 +61,6 @@ const MUI = () => {
 		<>
 			<ThemeProvider theme={theme}>
 				<ButtonStyled />
-				Email:
 				<TextField
 					variant='filled'
 					color='secondary'
@@ -69,8 +68,7 @@ const MUI = () => {
 					label='Email'
 					placeholder='test@test.com'
 				/>
-				Date:
-				<TextField variant='outlined' color='secondary' type='date' />
+				{/* <TextField variant='outlined' color='secondary' type='date' /> */}
 				<CheckboxExample />
 				<ButtonGroup variant='contained' color='primary'>
 					<Button startIcon={<SaveIcon />} size='large'>
