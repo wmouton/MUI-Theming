@@ -9,14 +9,16 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import Checkbox from "@material-ui/core/Checkbox";
 
 import { FormControlLabel } from "@material-ui/core";
-import { TextField } from "@material-ui/core";
+// import { TextField } from "@material-ui/core";
 import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
 import { green, orange } from "@material-ui/core/colors";
 
 import "fontsource-roboto";
 
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
+import { Typography } from "@material-ui/core";
+import { Container } from "@material-ui/core";
+import { Paper } from "@mui/material";
+import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles({
 	root: {
@@ -73,7 +75,7 @@ const CheckboxExample = () => {
 const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
-			<Container maxWidth="md">
+			<Container maxWidth='md'>
 				<div className='App'>
 					<header className='App-header'>
 						<Typography variant='h3' component='div'>
@@ -87,14 +89,17 @@ const App = () => {
 						</Typography>
 
 						<ButtonStyled />
+						<Grid>
+							<Paper />
+						</Grid>
 
-						<TextField
+						{/* <TextField
 							variant='filled'
 							color='secondary'
 							type='email'
 							label='Email'
 							placeholder='test@test.com'
-						/>
+						/> */}
 
 						{/* <TextField variant='outlined' color='secondary' type='date' /> */}
 						<CheckboxExample />
