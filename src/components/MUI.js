@@ -4,10 +4,13 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import SaveIcon from "@material-ui/icons/Save";
 import DeleteIcon from "@material-ui/icons/Delete";
 import Checkbox from "@material-ui/core/Checkbox";
+
 import { FormControlLabel } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
 import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
 import { green, orange } from "@material-ui/core/colors";
+
+import "fontsource-roboto";
 
 const useStyles = makeStyles({
 	root: {
@@ -26,8 +29,8 @@ const theme = createTheme({
 			main: green[400],
 		},
 		secondary: {
-			main: orange[400]
-		}
+			main: orange[400],
+		},
 	},
 });
 
